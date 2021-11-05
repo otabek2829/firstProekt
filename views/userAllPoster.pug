@@ -1,0 +1,20 @@
+extends layout
+block content
+ #userPoster
+    h2.text-center.pt-5 Mualifning Barcha E'lonlari
+    .container.mt-5
+        .row
+            each data in db
+              .col-lg-10.col-12.cards.mb-3 
+                .row.justify-content-between.align-items-center
+                    .col-3   
+                        .card-img
+                          img(src="images/" + data.img, alt="")
+                    .col-4
+                        p #{name}
+                        .card-title.text-center 
+                            h2=data.title   
+                            p #{data.price} so'm
+                            p= data.category    
+                            p.text-center= data.dataTime.toUTCString()
+                    

@@ -1,0 +1,30 @@
+extends layout
+block content
+ #userPoster
+    h2.text-center.pt-5 Mening E'lonlarim
+    .container.mt-5
+        .row
+         if db.length === 0
+              h1
+               .empty
+                .i.far.fa-folder-open
+                h1 E'lonlar Mavjud Emas              
+         else
+            each data in db
+              .col-10.cards.mb-3 
+                .row.justify-content-between.align-items-center
+                    .col-3   
+                        .card-img
+                          img(src="images/" + data.img, alt="")
+                    .col-4
+                        p #{name}
+                        .card-title.text-center 
+                            h2=data.title   
+                            p #{data.price} so'm
+                            p= data.category    
+                            p.text-center= data.dataTime.toUTCString()
+                    .col-2.text-center
+                        a(href="/card/more/" + data.id).btn.btn-success.w-100 More
+                        a(href="/card/update/" + data.id).btn.btn-warning.w-100.my-3 Update
+                        a(href="/card/delete/" + data.id).btn.btn-danger.w-100 Delete
+         

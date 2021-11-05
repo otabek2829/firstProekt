@@ -1,0 +1,30 @@
+extends layout
+block content
+    #more
+     h2.text-center.pt-5= title
+     .container.mt-5
+        .row
+              .col-lg-12.mb-3 
+                .row.justify-content-between.align-items-start
+                    .col-lg-7.more-card   
+                        .card-img
+                          img(src="images/" + data.img, alt="")
+                          p #{name}
+                        .card-title.text-left.m-3 
+                            h2=data.title   
+                            p #{data.price} so'm
+                            p.category Toifa: #{data.category}     
+                            p= data.comment    
+                            p.time Yuklangan Sana:  #{data.dataTime.toLocaleDateString()} | 
+                              span.text-center= data.dataTime.toLocaleTimeString()
+                    .col-lg-4.more-card-user
+                      .row.align-items-center.justify-content-lg-start.justify-content-center 
+                       .col-2 
+                         .icon.fas.fa-user
+                       .col-2.body-text 
+                        p #{match.names }   
+                        p +#{match.phone}    
+                      a(href="/card/userAllPoster/" + data.id).mb-2.btn.btn-info Muallifning e'lonlarini ko'rish
+
+                        
+                     

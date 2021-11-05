@@ -1,0 +1,21 @@
+extends layout
+block content
+  #user
+   .container-fluid.m-auto.user-body 
+      .row.justify-content-around.align-items-center
+        .col-7.cards
+         .row.justify-content-around.align-items-center  
+          .col-3  
+            .icon.i.far.fa-address-card
+          .col-4.user-name 
+            h1 #{data.names}  
+            p +#{data.phone}
+            span Ro'yhatdan O'tgan Sana    
+             p.far.fa-calendar-alt  #{data.dateTime.toLocaleDateString(uz, option)}
+          .col-3
+            .row
+              a(href="/card/poster").btn.btn-success Mening E'lonlarim 
+              a(href="/card").btn.btn-primary.my-3 Mahsulot joylash 
+              a(href="/register/logout").btn.btn-danger Exit
+    
+

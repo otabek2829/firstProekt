@@ -1,0 +1,129 @@
+#index .tape {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+    padding: 60px 0px 30px 0px;
+    margin-top: 50px;
+}
+
+#index .tape .diagram {
+    font-size: 45px;
+}
+
+#index .tape .tape-text {
+    font-weight: 700;
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+}
+
+#index .tape .btn {
+    font-weight: 500;
+    background-color: cornsilk;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 7px 62px;
+}
+
+#index .logo-about {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+}
+
+#index .logo-about .navbar-brand {
+    font-size: 65px !important;
+}
+
+#index .logo-about p, #index .documents p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffffab;
+}
+
+#index .documents {
+    padding: 100px 0px;
+    text-align-last: left;
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+}
+
+#index .documents .icon {
+    font-size: 88px;
+    color: darkkhaki;
+    margin-bottom: 20px;
+}
+
+#footer .last-wrapper {
+    padding: 80px 0px;
+    background: #536976;
+    background: -webkit-linear-gradient(to right, #292E49, #536976);
+    background: linear-gradient(to right, #292E49, #536976);
+    color: #fff;
+}
+
+#footer .last-wrapper ul li {
+    list-style: none !important;
+    font-size: 17px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#footer .last-wrapper .icon-page {
+    display: flex;
+    justify-content: center;
+}
+
+#footer .last-wrapper .icon-page i, #footer .icon-page i {
+    font-size: 62px;
+    margin: 0 10px;
+    color: #88d6ed;
+    cursor: pointer;
+}
+
+#footer {
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+}
+
+#footer .icon-page {
+    padding: 20px 0px 10px 0px;
+}
+
+#footer .icon-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #9dffdf;
+}
+
+#footer .icon-page i {
+    font-size: 30px;
+}
+
+#footer p {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#footer p .span {
+    font-weight: 500;
+    color: red;
+    font-size: 18px;
+}

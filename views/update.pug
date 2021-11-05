@@ -1,0 +1,39 @@
+extends layout
+block content
+
+ #section
+    .container
+      h3.text-center=title
+      .col-lg-5.m-auto
+       form(  method="POST" enctype="multipart/form-data"  )
+          .mb-3
+              label.form-label(for='exampleInputEmail1') Mahsulot nomi
+              input.form-control#exampleInputEmail1(type='text' name="title" required  value=data.title)
+          .mb-3
+              label.form-label(for='exampleInputPassword1') Mahsulotning narxi
+              input.form-control#exampleInputEmail1(type='text' name="price" required value=data.price)
+          .mb-3
+               label.form-label(for='exampleInputPassword1' ) Mahsulotlar Ro'yhati
+               select(name="category" autofocus required id="Select" value=data.category).form-control 
+                option(value="")  
+                option(value="Avtomobil") Avtomobil  
+                option(value="Maishiy Texnika") Maishiy Texnika  
+                option(value="Hayvon") Hayvon  
+                option(value="Kiym-Kechak")  Kiym-Kechak 
+                option(value="Asbos-Uskuna") Asbos-Uskuna 
+                option(value="Telefon") Telefon
+                option(value="Noutbook") Noutbook 
+                option(value="Ehtiyot Qism") Ehtiyot Qism
+                option(value="Idish-Tovoq") Idish-Tovoq
+                option(value="Qurilish moli") Qurilish moli
+                option(value="Parfumeriya") Parfumeriya
+                option(value="Oziq-ovqat") Oziq-ovqat
+                option(value="Boshqa") Boshqa 
+          .mb-3
+            label.form-label(for='exampleInputPassword1' ) Mahsulot haqida batafsil
+            textarea(name="comment", cols="10", rows="4", ).form-control#exampleInputPassword1=data.comment
+          .mb-3
+             label.form-label(for='exampleInputPassword1') Mahsulotning  rasmi
+             input(type="file" name="img" required ).form-control#exampleInputPassword1
+          .mb-3.text-center
+             button.btn.btn-primary.w-50(type='submit')= btn

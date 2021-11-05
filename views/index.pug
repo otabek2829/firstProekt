@@ -1,0 +1,95 @@
+extends layout
+block content
+  #index 
+    #scrollTop(onclick='window.scrollTo({top: 0, behavior: "smooth"})')
+     i.fas.fa-arrow-up
+    .menuCategory  
+      h3 Bosh toifalar
+      .container 
+        .row    
+          .col-xl-2.col-lg-3.col-md-4.col-5
+           .item
+            a(href='/').icon.i.fas.fa-car
+            p Avtomobil
+          .col-xl-2.col-lg-3.col-md-4.col-5
+           .item 
+            a(href='/').icon.i.fas.fa-paw
+            p Uy hayvonlari 
+          .col-xl-2.col-lg-3.col-md-4.col-5
+           .item 
+            a(href='/').icon.i.fas.fa-tshirt
+            p Kiyim-Kechak 
+          .col-xl-2.col-lg-3.col-md-4.col-5
+           .item
+            a(href='/').icon.i.fas.fa-laptop
+            p Noutbook 
+          .col-xl-2.col-lg-3.col-md-4.col-5
+           .item 
+            a(href='/').icon.i.fas.fa-utensils
+            p Oziq-ovqat
+          .col-xl-2.col-lg-3.col-md-4.col-5
+           .item 
+            a(href='/').icon.i.fas.fa-tools
+            p Asbob-uskuna
+          .col-xl-2.col-lg-3.col-md-4.col-5
+           .item 
+            a(href='/').icon.i.fas.fa-baby-carriage
+            p Bolalar dunyosi
+          .col-xl-2.col-lg-3.col-md-4.col-5
+           .item 
+            a(href='/').icon.i.fas.fa-couch
+            p Mebellar
+          .col-xl-2.col-lg-3.col-md-4.col-5
+           .item 
+            a(href='/').icon.i.fas.fa-magic
+            p Parfumeriya
+          .col-xl-2.col-lg-3.col-md-4.col-5
+           .item 
+            a(href='/').icon.i.fas.fa-snowplow
+            p Qurilish mollari
+          .col-xl-2.col-lg-3.col-md-4.col-5
+           .item 
+            a(href='/').icon.i.fas.fa-ambulance
+            p Xizmat ko'rsatish
+          .col-xl-2.col-lg-3.col-md-4.col-5
+           .item 
+            a(href='/').icon.i.fas.fa-graduation-cap
+            p Qo'llanma
+    h2 PREMIUM E`LONLAR          
+    .container 
+      .row 
+        each data in db
+          .col-lg-3.col-md-4.col-sm-6.my-3.col-12
+            .card   
+              .card-img
+                img(src="images/"+ data.img, alt="")
+              p #{name}
+              .card-title.text-center 
+                h4=data.title   
+              .card-body 
+                p #{data.price} so'm
+                p.category Toifa: #{data.category} 
+              p.time Yuklangan Sana:  #{data.dataTime.toLocaleDateString()}
+              a(href="/card/more/" + data.id).btn.btn-danger   More  
+    .tape
+     .row
+      .col-md-2.col-auto
+        .diagram.i.fas.fa-project-diagram
+      .col-lg-8.col-md-8.col-9
+        p.tape-text OLX bilan internetda biznesingizni boshlang!
+      .col-lg-2.col-md-2.col-12 
+        .btn.btn-info Ba'tafsil
+    .logo-about  
+      .col-lg-7.col-10 
+        .a.navbar-brand(href='/') olx
+        p Oʻzbekistonda 1-raqamli eʼlonlar servisi
+          | Oʻzbekiston xususiy eʼlonlari OLX (avvalgi torg.uz) – bu yerda izlaganingizni topasiz.
+          | "Eʼlon joylashtirish" tugmasiga bosib, siz istalgan mavzuga oid onlayn-eʼlonni joylashtira olasiz – ish qidirish, xizmat koʻrsatish, avtomobillar, koʻchmas mulk, elektronika va boshqalar savdosi.
+          | OLX Oʻzbekiston servisi yordamida siz deyarli barcha istagan narsangizni sotish yoki sotib olishingiz mumkin. Qidiruv funksiyasidan foydalanib, oʻzingizni qiziqtirgan mavzuga oid sersisda mavjud eʼlonlarni hech bir qiyinchiliksiz topa olasiz.
+          | OLX Oʻzbekiston – sizning ishonchli va tengi yoʻq yordamchingiz.
+    .documents 
+      .container.body-text 
+        .col-lg-10
+          .icon.i.fas.fa-file-invoice-dollar
+          p OLX servisining boʻlimlari: Bolalar dunyosi, Ko'chmas mulk, Transport, Ish, Hayvonlar, Uy va bog', Elektr jihozlari, Xizmatlar, Moda va stil, Xobbi, dam olish sport, Tekinga beraman, Ayirboshlash
+    

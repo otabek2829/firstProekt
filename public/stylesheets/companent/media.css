@@ -1,0 +1,66 @@
+/* ==================== Media Query Starting ==================== */
+
+/* Xl -1200+++ media query */
+
+@media (min-width:1200px) {
+    #index .card .card-img img {
+        width: 245px;
+    }
+   
+    #user {
+        min-height: 600px !important;
+    }
+}
+
+/* lg - 992+++ media query */
+
+@media (max-width:1199px) {
+    #login {
+        min-height: 600px!important;
+    }
+    /* md - 768+++ media query */
+    @media (max-width:991px) {
+        #more .more-card {
+            border: 4px solid #404e57!important;
+            margin-bottom: 30px;
+        }
+        #more .more-card-user .body-text {
+            margin-left: -10px !important;
+        }
+    }
+    /* sm - 576+++ media query */
+    @media (max-width:767px) {
+        #login .btn {
+            width: 10px !important;
+        }
+    }
+}
+
+/*  - 320+++ media query */
+
+@media (max-width:576px) {
+    #index .card .card-img img {
+        width: 470px;
+        height: 250px;
+    }
+    .navbars .search {
+        display: none;
+    }
+    #more .more-card-user .body-text {
+        margin-left: 10px !important;
+    }
+    #login {
+        min-height: 400px!important;
+    }
+    
+}
+
+@media (min-width:576px) {
+    #userб, #more, #userPoster, #section, #login ,#register {
+        padding-top: 150px;
+    }
+    #more, #userPoster {
+        padding-bottom: 150px;
+    }
+    
+}

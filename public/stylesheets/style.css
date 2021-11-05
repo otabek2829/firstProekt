@@ -1,0 +1,360 @@
+@import url("./companent/media.css");
+@import url("./companent/button.css");
+@import url("./companent/admin.css");
+body {
+  padding: 0px;
+}
+
+#section .form-control {
+  background-color: transparent;
+  border-radius: 15px!important;
+  color: #fff !important;
+  text-transform: capitalize;
+}
+
+#Select {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+#Select option {
+  background-color: #000000 !important;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* Navbar Starting */
+
+.navbars {
+  background: #002f34 !important;
+}
+
+.navbars .navbar-brand, #index .logo-about .navbar-brand {
+  color: #24e5db;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.navbar {
+  justify-content: space-between !important;
+}
+
+.collapse {
+  flex-grow: unset !important;
+}
+
+.formFor {
+  width: 30%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#flash {
+  position: absolute;
+  top: 30%;
+  left: 78%;
+  display: flex;
+  flex-direction: column;
+  width: 220px !important;
+}
+
+.alert {
+  margin: 10px;
+  padding: 6px 55px !important;
+  border-top-right-radius: 15px !important;
+  border-bottom-left-radius: 15px!important;
+  z-index: 99 !important;
+  border-bottom-right-radius: 15px !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-link::before {
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.navbar-nav a:hover {
+  padding-bottom: -3px;
+  box-sizing: border-box!important;
+  color: #fff000 !important;
+  border-bottom: 2px solid #fff000;
+}
+
+.add {
+  min-height: 720px;
+  background: #4b6cb7;
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+  background: linear-gradient(to right, #182848, #4b6cb7);
+}
+
+/* INDEX STYLE STARTING  */
+
+#index #scrollTop {
+  background-color: rgba(45, 113, 158, 0.7);
+  position: fixed;
+  top: 85%;
+  right: 6%;
+  font-size: 25px;
+  padding: 12px 25px;
+  border-radius: 10px;
+  z-index: 999;
+  transition: 500ms;
+}
+#index #scrollTop:hover{
+  color: red;
+}
+#index .menuCategory {
+  padding: 80px 10px;
+  background: #000428;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #004e92, #000428);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-bottom: 70px;
+}
+
+#index .menuCategory h3, #index h2 {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+#index .menuCategory .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 101px;
+  height: 100px;
+  border: 1px solid #f3e000a6;
+  ;
+  border-radius: 50%;
+  margin-left: 65px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+#index .menuCategory .item:hover {
+  -webkit-box-shadow: 5px 5px 15px 5px #08B0FF;
+  box-shadow: 5px 5px 15px 5px #08B0FF;
+}
+
+#index .menuCategory .item p {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+}
+
+#index .menuCategory .item .icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: #ffffffc2;
+  text-decoration: none;
+}
+
+#index .card .btn {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#index .card-body .category {
+  margin-bottom: 0px;
+}
+
+#index .card .time {
+  font-size: 12px !important;
+}
+
+#index .card img {
+  border-radius: 30px;
+}
+
+/* Card Starting */
+
+.card .card-img img {
+  width: 215px;
+  height: 150px;
+}
+
+section .card .time {
+  font-size: 10px;
+  text-align: center;
+}
+
+section .card {
+  min-height: 350px;
+  margin: 0;
+  padding: 0;
+}
+
+section .card .btn {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* .user-body {
+  background-color: #2aaad5!important;
+  min-height: 624px;
+  padding-top: 150px;
+} */
+
+#user .cards {
+  padding: 10px;
+}
+
+#user .icon {
+  font-size: 120px!important;
+  color: gray;
+  font-weight: 700;
+}
+
+#user .user-body {
+  padding-top: 150px !important;
+}
+
+#user .user-body .user-name h1 {
+  font-size: 45px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+#user .user-body .user-name h1 p {
+  font-size: 25px;
+}
+
+#user .user-body .user-name span {
+  letter-spacing: -1px;
+  font-weight: 400;
+  color: #21c719;
+}
+
+#user .user-body .user-name span p {
+  letter-spacing: 0px;
+  font-size: 15px;
+  color: #000000;
+  text-align: center;
+}
+
+/* Poster Style */
+
+#userPoster .cards {
+  color: #fff;
+  margin: auto;
+  font-weight: 700;
+}
+
+#userPoster .empty {
+  font-size: 280px;
+  text-align: center;
+  color: rgba(249, 249, 255, 0.3);
+  margin-top: 100px;
+}
+
+#userPoster .cards .btn, #user .cards .btn, #login .btn, #register .btn {
+  border-radius: 15px!important;
+}
+
+#userPoster .cards .card-img img {
+  width: 100%;
+  height: 130px;
+}
+
+/* Section More Card Style*/
+
+/* Orqa Fon */
+
+#more, #userPoster, #index, #user, #section, #login, #register {
+  min-height: 850px;
+  background: #536976;
+  background: -webkit-linear-gradient(to right, #292E49, #536976);
+  background: linear-gradient(to right, #292E49, #536976);
+  color: #fff;
+}
+
+#more .more-card {
+  border: 1px solid #536976;
+  font-weight: 700;
+  padding: 0;
+  text-transform: capitalize;
+  border-radius: 30px;
+}
+
+#more .more-card-user, #userPoster .cards, #index .card, #user .cards {
+  border-radius: 30px;
+  text-align: center;
+  background-color: transparent !important;
+  border: 1px solid #6b90a5;
+}
+
+#more img {
+  padding: -10px;
+  width: 100%;
+  height: 400px;
+  border-radius: 30px;
+}
+
+#more .more-card-user p {
+  font-size: 20px;
+}
+
+#more .more-card-user .icon {
+  font-size: 75px;
+  margin-right: 25px;
+}
+
+#more .more-card-user .body-text {
+  margin-left: 35px;
+  margin-top: 15px;
+  color: #b8c9ca;
+  font-weight: 700;
+}
+
+/* #Section Starting FORM ADD PRoduct */
+
+#section .form-control, #register .form-control, #login .form-control {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: 15px;
+}
+
+#login {
+  position: relative;
+}
+
+#login .btn {
+  width: 200px !important;
+}
+
+/* Show And Hide Password */
+
+#login .open, #login .close, #register .open, #register .close {
+  position: absolute;
+  font-size: 26px;
+  top: 375px;
+  right: 31%;
+  margin-bottom: 5px;
+}
+
+#register .open, #register .close {
+  top: 415px;
+}
